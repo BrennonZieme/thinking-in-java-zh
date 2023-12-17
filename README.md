@@ -1,35 +1,65 @@
-## Thinking in Java (Java 编程思想)
+# CCpp2016
 
-原书：[Thinking in Java 4th Edition](http://mindview.net/Books/TIJ4)
+## 基本操作流程
 
-作者：[Bruce Eckel](http://www.mindviewinc.com/Index.php)
+1. 从 [https://github.com/luckymark/CCpp2016](https://github.com/luckymark/CCpp2016) fork 到你自己的github中
+2. 创建本地仓库：(如果用机房的电脑，则建议clone到U盘，便于携带)
 
-原始中文版：[Thinking in Java 在线中文版](http://www.yq1012.com/ThinkingInJava/)
+	```
+	git clone https://github.com/ **YourGithubAccount** /CCpp2016
+	cd CCpp2016
+	ls
+	
+	git config user.name=???
+	git config user.email=??? 
+	
+	git remote -v
+	git remote add upstream https://github.com/luckymark/CCpp2016
+	```
+	
+3. 修改、提交代码：
 
-译者：
+	```
+	git status
+	git add .
+	git commit -m "完成了running letter"
+	git push
+	```	
 
-+ [yyc](mailto:yycmail@263.net)
+4. 从 https://github.com/luckymark/CCpp2016 获取更新
 
-+ [spirit](mailto:nimbusyyf@sohu.com)
+	```
+	git fetch upstream
+	git merge upstream/master
+	```	
+	[在github网页上更新的方法](https://www.zhihu.com/question/20393785/answer/30725725)
+	
+	[fork后如何同步源的新更新](https://segmentfault.com/q/1010000002590371)
+	
+5. 请求老师review代码的方法：在github网页上发起一个PR（pull request）即可
 
-修订：
+## [作业](https://github.com/luckymark/CCpp2016/tree/master/practices)
 
-+ [wizardforcel](https://github.com/wizardforcel)
+1. level0 可选，用于还不够熟练的同学练手（嫌题目太少的同学，那就刷刷咱[神技大学的OJ](http://acm.uestc.edu.cn/#/)吧，从低到高地刷哈）
+2. level1 必做，课堂＋课后练习
+3. level2 可选，供精力旺盛到变态的大神们发泄之用
 
-整理：
+## 参考
 
-+ [quanke](http://quanke.name)
+### GIT
 
-+ [wizardforcel](https://github.com/wizardforcel)
+[史上最浅显易懂的Git教程！ 廖雪峰](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
----
+[Pro Git（中文版）](http://git.oschina.net/progit/)
 
-+ [在线阅读](https://www.gitbook.com/book/wizardforcel/thinking-in-java/details)
-+ [PDF格式](https://www.gitbook.com/download/pdf/book/wizardforcel/thinking-in-java)
-+ [EPUB格式](https://www.gitbook.com/download/epub/book/wizardforcel/thinking-in-java)
-+ [MOBI格式](https://www.gitbook.com/download/mobi/book/wizardforcel/thinking-in-java)
-+ [代码仓库](http://github.com/it-ebooks/thinking-in-java-zh)
+[Git远程操作详解 阮一峰](http://www.ruanyifeng.com/blog/2014/06/git_remote.html)
 
-> 注
-> 
-> 我们没有翻译第五版（On Java 8）的计划，请访问 [LingCoder/OnJava8](https://github.com/LingCoder/OnJava8)。
+[fork后如何跟上源repo的变化](https://segmentfault.com/q/1010000002590371)
+
+### Markdown
+
+[Markdown入门指南](http://www.jianshu.com/p/1e402922ee32)
+
+### 其他
+
+[免费的计算机编程类中文书籍](https://github.com/wwj718/free-programming-books-zh_CN)
